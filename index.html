@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Cores</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- 📘 Manual à esquerda -->
+    <aside class="manual">
+      <h2>📘 Guia de Uso</h2>
+      <p><strong>Objetivo:</strong> Ajudar você a testar combinações de cores entre fundo e texto, simulando como elas
+        aparecerão juntas.</p>
+
+      <p><strong>Como funciona:</strong> Ao escolher uma cor de fundo e outra para o texto, o sistema calcula o
+        contraste entre elas, usando a fórmula oficial da <em>W3C</em>.</p>
+
+      <p><strong>Nota:</strong> O contraste é convertido em uma nota de 0 a 10. Quanto maior a nota, mais legível e
+        acessível será a combinação para todas as pessoas, inclusive com baixa visão.</p>
+
+      <p><strong>Exemplo de UX:</strong> Um botão amarelo com texto branco terá nota baixa (difícil de ler). Já um fundo
+        azul escuro com texto branco tem nota alta (fácil de ler).</p>
+
+      <p><strong>Dica:</strong> Use o botão 🔁 para inverter as cores e experimentar novas combinações.</p>
+    </aside>
+
+    <!-- 🎨 Painel à direita -->
+    <main class="painel">
+      <h1>Simulador de Cores</h1>
+
+      <div class="color-selector" data-id="1">
+        <div class="input-group">
+          <label>Cor de Fundo:</label>
+          <input type="color" class="picker">
+          <div class="campo-com-copiar">
+            <input type="text" class="input" placeholder="#000000">
+            <button class="copiar">📋</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="color-selector" data-id="2">
+        <div class="input-group">
+          <label>Cor do Texto:</label>
+          <input type="color" class="picker">
+          <div class="campo-com-copiar">
+            <input type="text" class="input" placeholder="#ffffff">
+            <button class="copiar">📋</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="simulador">
+        <button class="btn-exemplo" id="btnSimulador">Exemplo</button>
+        <div class="avaliacao" id="avaliacaoTexto"></div>
+        <button class="btn-inverter" id="btnInverter">🔁 Inverter Cores</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+<footer class="creditos">
+  Desenvolvido por <strong>Andressa Viana Soares Justino</strong> 💻
+</footer>
+
+</html>

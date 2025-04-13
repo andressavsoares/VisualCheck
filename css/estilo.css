@@ -1,0 +1,195 @@
+/* ---------- GERAL ---------- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5faff;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+  }
+  
+  /* ---------- MANUAL (esquerda) ---------- */
+  .manual {
+    flex: 1;
+    background: #f0f4ff;
+    padding: 40px 30px;
+    border-right: 1px solid #ccc;
+    box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .manual h2 {
+    color: #2a4d8f;
+    margin-bottom: 20px;
+  }
+  
+  .manual p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  
+  /* ---------- PAINEL (direita) ---------- */
+  .painel {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #2a4d8f;
+  }
+  
+  .color-selector {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+  }
+  
+  input[type="color"] {
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .campo-com-copiar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .campo-com-copiar input {
+    flex: 1;
+  }
+  
+  .copiar {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .copiar:hover {
+    background-color: #cfcfcf;
+  }
+  
+  .simulador {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn-exemplo {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .btn-exemplo:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-inverter {
+    background-color: #2a4d8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-inverter:hover {
+    background-color: #1f3872;
+  }
+  
+  .avaliacao {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #444;
+  }
+
+  .creditos {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .creditos {
+      font-size: 13px;
+      padding: 15px;
+    }
+  }
+  
+  
+  /* ---------- RESPONSIVO ---------- */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .manual,
+    .painel {
+      flex: none;
+      width: 100%;
+      padding: 20px;
+      box-shadow: none;
+      border: none;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .btn-exemplo,
+    .btn-inverter {
+      font-size: 16px;
+      padding: 12px;
+      width: 100%;
+    }
+  
+    .campo-com-copiar {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .copiar {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  
