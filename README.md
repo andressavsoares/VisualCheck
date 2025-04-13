@@ -1,6 +1,6 @@
 # Combina Cores 🎨
 
-![Captura de Tela (1)](https://github.com/user-attachments/assets/2b5ca161-ac52-4a49-bbe0-1bdbd38c7ae0)
+![Captura de Tela (1)](https://github.com/user-attachments/assets/24435892-310e-4d90-a3f3-55f2ece59b95)
 
 
 Ferramenta simples e intuitiva para testar **combinações de cores** entre **fundo e texto**, avaliando sua legibilidade com base nas normas de acessibilidade.
